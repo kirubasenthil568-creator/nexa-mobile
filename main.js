@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     // Apply scroll animations to sections and cards
-    const animElements = document.querySelectorAll('.service-card, .project-item, .founder-card, .contact-grid');
+    const animElements = document.querySelectorAll('.service-card, .project-item, .leader-card, .contact-grid');
     animElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';

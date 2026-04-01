@@ -251,49 +251,86 @@ nav a:hover {
     letter-spacing: 1px;
 }
 
-/* Founder */
-.founder-card {
-    display: flex;
-    gap: 5rem;
-    align-items: center;
-    background: linear-gradient(135deg, var(--bg-card), rgba(10, 14, 26, 0.9));
-    padding: 5rem;
-    border-radius: 40px;
-    border: 1px solid var(--glass-border);
+/* Leadership Team */
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 3rem;
     margin-top: 50px;
 }
 
-.founder-img-wrapper {
-    flex: 0 0 350px;
-    height: 350px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 5px solid var(--primary-blue);
-    box-shadow: 0 0 40px rgba(0, 174, 239, 0.2);
+.leader-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, var(--bg-card), rgba(10, 14, 26, 0.9));
+    padding: 4rem 3rem;
+    border-radius: 40px;
+    border: 1px solid var(--glass-border);
+    text-align: center;
+    transition: var(--transition);
 }
 
-.founder-img-wrapper img {
+.leader-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-blue);
+    box-shadow: 0 10px 40px rgba(0, 174, 239, 0.2);
+}
+
+.leader-img-wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--primary-blue);
+    box-shadow: 0 0 30px rgba(0, 174, 239, 0.2);
+    margin-bottom: 2rem;
+}
+
+.leader-img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.founder-info h3 {
-    font-size: 2.5rem;
+.leader-info h3 {
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
-.founder-title {
-    color: var(--primary-blue);
+.leader-title {
+    color: var(--accent-orange);
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: block;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
 }
 
-.founder-info p {
-    font-size: 1.1rem;
+.leader-edu {
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.leader-bio {
+    font-size: 1rem;
     color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.leader-location, .leader-contact {
+    font-size: 0.95rem;
+    color: var(--text-white);
+    opacity: 0.9;
+}
+
+.leader-contact a:hover {
+    color: var(--primary-blue);
+    text-decoration: underline !important;
 }
 
 /* Contact */
