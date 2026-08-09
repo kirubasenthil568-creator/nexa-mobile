@@ -1500,7 +1500,6 @@ img { max-width: 100%; display: block; }
     .bento-cursor { display: none !important; }
     .bento-card { cursor: auto; }
     .cursor-card { cursor: auto; }
-    .custom-cursor { display: none !important; }
     .svc-slice:hover .svc-desc { max-height: 0; opacity: 0; }
     .svc-slice:hover h3 { font-size: 1rem; color: #fff; }
     .svc-slice:hover { flex: 1; z-index: auto; box-shadow: none; }
@@ -1510,4 +1509,37 @@ img { max-width: 100%; display: block; }
     .holo-card:hover::before { opacity: 0; }
     .team-card:hover { transform: none; }
     .nav-cta:hover { transform: none; }
+    
+    /* Interactive Card Fallbacks for Touch Devices */
+    .custom-cursor { 
+        display: flex !important; opacity: 1 !important; 
+        transform: translate(-50%, -50%) scale(1) !important;
+        top: 50% !important; left: 50% !important;
+        animation: mobileCustomCursorMove 5s ease-in-out infinite alternate !important;
+    }
+    .cursor-card .cursor-demo-area { opacity: 1 !important; }
+    @keyframes mobileCustomCursorMove {
+        0% { transform: translate(-50%, -50%) translate(-40px, -20px) scale(1) !important; }
+        50% { transform: translate(-50%, -50%) translate(40px, 10px) scale(1.1) !important; }
+        100% { transform: translate(-50%, -50%) translate(-20px, 30px) scale(0.9) !important; }
+    }
+    
+    .mag-btn-demo {
+        animation: mobileMagBtnFloat 4s ease-in-out infinite alternate !important;
+    }
+    @keyframes mobileMagBtnFloat {
+        0% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(10px, -10px) scale(1.05); }
+        100% { transform: translate(-10px, 5px) scale(0.95); }
+    }
+    
+    .tilt-el {
+        animation: mobileTiltWobble 6s ease-in-out infinite alternate !important;
+        transform-style: preserve-3d;
+    }
+    @keyframes mobileTiltWobble {
+        0% { transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) scale(0.95); }
+        50% { transform: perspective(1000px) rotateX(-5deg) rotateY(15deg) scale(1.02); }
+        100% { transform: perspective(1000px) rotateX(-15deg) rotateY(-5deg) scale(0.98); }
+    }
 }
