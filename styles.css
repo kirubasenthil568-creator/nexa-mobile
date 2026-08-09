@@ -1237,20 +1237,20 @@ img { max-width: 100%; display: block; }
     .svc-content { 
         position: relative; bottom: auto; left: auto;
         padding: 0.8rem 1rem; height: auto;
-        display: flex; flex-direction: row; align-items: center; gap: 0.75rem;
+        display: flex; flex-direction: row; align-items: center; justify-content: flex-start !important; gap: 0.75rem;
         pointer-events: auto;
     }
     .svc-icon { font-size: 1rem; margin-bottom: 0; flex-shrink: 0; }
     .svc-icon svg { width: 22px; height: 22px; }
-    .svc-slice h3 { font-size: 0.95rem; margin-bottom: 0; }
-    .svc-desc { font-size: 0.8rem; display: none; }
+    .svc-slice h3 { font-size: 0.95rem; margin-bottom: 0; text-align: left; }
+    .svc-desc { font-size: 0.8rem; display: none; text-align: left; }
     .svc-bg { opacity: 0.15; }
     .svc-overlay { background: linear-gradient(to right, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.6) 100%); }
     
     /* Services mobile-active state */
     .svc-slice.mobile-active { min-height: 120px; }
     .svc-slice.mobile-active .svc-content {
-        flex-direction: column; align-items: flex-start; padding: 1rem 1.2rem;
+        flex-direction: column; align-items: flex-start; justify-content: center !important; padding: 1rem 1.2rem;
     }
     .svc-slice.mobile-active h3 { font-size: 1.15rem !important; color: var(--primary) !important; }
     .svc-slice.mobile-active .svc-desc { 
@@ -1267,11 +1267,13 @@ img { max-width: 100%; display: block; }
     
     /* Bento UX Labs */
     .bento-container { 
-        grid-template-columns: 1fr !important; gap: 0.75rem; padding: 0 0.75rem; 
+        display: flex !important; flex-direction: column !important;
+        gap: 0.75rem; padding: 0 0.75rem; 
     }
     .bento-card { 
         min-height: 180px; padding: 1.5rem 1rem; cursor: auto; 
         overflow: hidden !important; position: relative;
+        grid-column: auto !important; /* reset spans */
     }
     .bento-card h3 { font-size: 1.15rem; }
     .bento-card p { font-size: 0.8rem; margin-bottom: 0.75rem; }
