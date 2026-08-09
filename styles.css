@@ -1404,8 +1404,30 @@ img { max-width: 100%; display: block; }
     .cursor-glow { display: none !important; }
     .bento-cursor { display: none !important; }
     .bg-particle { display: none; }
-    .custom-cursor { display: none !important; }
     .cta-ripple { display: none; }
+    
+    /* Fallback mobile animations for interactive cards */
+    .custom-cursor { 
+        display: flex !important; opacity: 1 !important; 
+        transform: translate(-50%, -50%) scale(1) !important;
+        top: 50% !important; left: 50% !important;
+        animation: mobileCustomCursorMove 5s ease-in-out infinite alternate !important;
+    }
+    .cursor-card .cursor-demo-area { opacity: 1 !important; }
+    @keyframes mobileCustomCursorMove {
+        0% { transform: translate(-50%, -50%) translate(-40px, -20px) scale(1) !important; }
+        50% { transform: translate(-50%, -50%) translate(40px, 10px) scale(1.1) !important; }
+        100% { transform: translate(-50%, -50%) translate(-20px, 30px) scale(0.9) !important; }
+    }
+    
+    .mag-btn-demo {
+        animation: mobileMagBtnFloat 4s ease-in-out infinite alternate !important;
+    }
+    @keyframes mobileMagBtnFloat {
+        0% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(10px, -10px) scale(1.05); }
+        100% { transform: translate(-10px, 5px) scale(0.95); }
+    }
 }
 
 /* ───── D) Extra Small (≤ 480px) ───── */
