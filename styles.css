@@ -1290,14 +1290,25 @@ img { max-width: 100%; display: block; }
         50% { transform: scale(0.6) translate(20%, 0%) rotateY(5deg); } 
     }
     
-    .gooey-stage { transform: scale(0.6) translate(30%, 10%); transform-origin: bottom right; opacity: 0.5; }
+    /* Fix gooey SVG filter bug on mobile by removing parent transform */
+    .gooey-stage { transform: none; opacity: 0.5; }
     .goo-blob { 
+        width: 70px; height: 70px; /* manually scaled down instead of parent transform */
         top: 70%; left: 80%; 
         animation: mobileGooPulse 4s ease-in-out infinite alternate; 
     }
     @keyframes mobileGooPulse { 
         0% { transform: translate(-50%, -50%) scale(1); } 
-        100% { transform: translate(-40%, -60%) scale(1.4); } 
+        100% { transform: translate(-40%, -60%) scale(1.2); } 
+    }
+    .goo-cursor {
+        width: 30px; height: 30px;
+        top: 70%; left: 80%;
+        animation: mobileGooOrbit 4s linear infinite;
+    }
+    @keyframes mobileGooOrbit {
+        0% { transform: translate(-50%, -50%) rotate(0deg) translateX(40px) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg) translateX(40px) rotate(-360deg); }
     }
     
     .cyber-mask-area { 
