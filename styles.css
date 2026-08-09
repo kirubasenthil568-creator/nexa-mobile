@@ -1151,8 +1151,9 @@ img { max-width: 100%; display: block; }
 /* ───── B) Mobile Nav Overlay ───── */
 .nav-links.open {
     display: flex; flex-direction: column; position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(10, 10, 10, 0.85); /* Proper translucent background */
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background-color: #050505;
+    background-color: rgba(5, 5, 5, 0.95);
     backdrop-filter: blur(25px); 
     -webkit-backdrop-filter: blur(25px);
     padding: 6rem 2rem 2rem;
