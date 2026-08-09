@@ -1428,6 +1428,16 @@ img { max-width: 100%; display: block; }
         50% { transform: translate(10px, -10px) scale(1.05); }
         100% { transform: translate(-10px, 5px) scale(0.95); }
     }
+    
+    .tilt-el {
+        animation: mobileTiltWobble 6s ease-in-out infinite alternate !important;
+        transform-style: preserve-3d;
+    }
+    @keyframes mobileTiltWobble {
+        0% { transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) scale(0.95); }
+        50% { transform: perspective(1000px) rotateX(-5deg) rotateY(15deg) scale(1.02); }
+        100% { transform: perspective(1000px) rotateX(-15deg) rotateY(-5deg) scale(0.98); }
+    }
 }
 
 /* ───── D) Extra Small (≤ 480px) ───── */
