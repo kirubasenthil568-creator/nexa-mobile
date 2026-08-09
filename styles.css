@@ -1148,8 +1148,9 @@ img { max-width: 100%; display: block; }
 .nav-links.open {
     display: flex; flex-direction: column; position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(5,5,5,0.98);
-    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    background: rgba(10, 10, 10, 0.85); /* Proper translucent background */
+    backdrop-filter: blur(25px); 
+    -webkit-backdrop-filter: blur(25px);
     padding: 6rem 2rem 2rem;
     border-bottom: none; gap: 0.5rem;
     z-index: 999;
