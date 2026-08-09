@@ -1,6 +1,7 @@
 // ── Device Detection ──
-const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
 const isMobile = window.innerWidth <= 768;
+// Many Windows laptops have touch screens (maxTouchPoints > 0). We only want to disable heavy effects on actual mobile phones.
+const isTouchDevice = isMobile || (('ontouchstart' in window) && navigator.userAgent.toLowerCase().match(/mobile/i));
 
 // ── Throttle helper ──
 function throttle(func, limit) {

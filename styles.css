@@ -1350,12 +1350,8 @@ img { max-width: 100%; display: block; }
     .cursor-glow { display: none !important; }
     .bento-cursor { display: none !important; }
     .bg-particle { display: none; }
-    .glass-stage { display: none; }
-    .gooey-stage { display: none; }
     .custom-cursor { display: none !important; }
-    .cyber-mask-area { display: none; }
     .cta-ripple { display: none; }
-    #glassCard::after, #maskCard::after { display: none; }
 }
 
 /* ───── D) Extra Small (≤ 480px) ───── */
