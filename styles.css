@@ -1358,9 +1358,13 @@ img { max-width: 100%; display: block; }
     
     /* Contact */
     .contact-cards-3d { flex-direction: column; align-items: center; gap: 0.75rem; perspective: none; }
-    .holo-card { width: 100%; max-width: 320px; padding: 1.5rem 1.2rem 1.2rem; }
+    .holo-card { width: 100%; max-width: 320px; padding: 1.2rem 1rem; min-height: unset; }
     .holo-card:hover { transform: none; }
-    .holo-icon { transform: none; }
+    .holo-icon { transform: none; width: 56px; height: 56px; margin: 0 auto 0.75rem; }
+    .holo-icon .orbit { width: 66px; height: 66px; }
+    .holo-icon svg { width: 28px !important; height: 28px !important; }
+    .holo-card .holo-label { margin-bottom: 0.25rem; font-size: 0.6rem; }
+    .holo-card .holo-value { font-size: 0.9rem; }
     .contact-blob { width: 200px; height: 200px; }
     .final-cta-btn { padding: 0.9rem 2rem; font-size: 0.95rem; width: 100%; max-width: 320px; }
     #contact { padding: 3rem 0; }
