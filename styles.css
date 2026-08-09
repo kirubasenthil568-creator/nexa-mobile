@@ -1152,10 +1152,9 @@ img { max-width: 100%; display: block; }
 .nav-links.open {
     display: flex; flex-direction: column; position: fixed;
     top: 0; left: 0; width: 100vw; height: 100vh;
-    background-color: #050505;
-    background-color: rgba(5, 5, 5, 0.95);
-    backdrop-filter: blur(25px); 
-    -webkit-backdrop-filter: blur(25px);
+    background-color: rgba(10, 10, 10, 0.6); /* Translucent enough to see the blur */
+    backdrop-filter: blur(25px) saturate(1.5); 
+    -webkit-backdrop-filter: blur(25px) saturate(1.5);
     padding: 6rem 2rem 2rem;
     border-bottom: none; gap: 0.5rem;
     z-index: 999;
