@@ -499,7 +499,7 @@ img { max-width: 100%; display: block; }
 /* Custom Cursor Card */
 .cursor-card { padding: 0; border: none; cursor: none; }
 .cursor-card .bento-content { padding: 2.5rem; position: absolute; top: 0; left: 0; z-index: 10; pointer-events: none; }
-.cursor-demo-area { width: 100%; height: 100%; background: url('image/cyber_illust_1785940104742.jpg') center/cover; opacity: 0.4; transition: opacity 0.3s; border-radius: 1.5rem; }
+.cursor-demo-area { width: 100%; height: 100%; background: url('./image/cyber_illust_1785940104742.jpg') center/cover; opacity: 0.4; transition: opacity 0.3s; border-radius: 1.5rem; }
 .cursor-card:hover .cursor-demo-area { opacity: 1; }
 .custom-cursor {
     position: absolute; top: 0; left: 0; width: 110px; height: 44px;

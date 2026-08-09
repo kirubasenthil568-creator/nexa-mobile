@@ -668,7 +668,7 @@ const serviceData = {
         desc: "A website is often the first conversation you have with a customer — we make sure it's a good one. Clean design, fast load times, and an experience that feels effortless on any screen.",
         whatYouGet: ["Business websites", "Custom UI/UX", "Responsive design", "Landing pages", "Ongoing design support"],
         howWeWork: ["Research", "Design", "Build", "Optimize", "Grow"],
-        image: "image/web_design_illust_1785940025687.jpg"
+        image: "./image/web_design_illust_1785940025687.jpg"
     },
     fullstack: {
         title: "02 — Fullstack",
@@ -676,7 +676,7 @@ const serviceData = {
         desc: "No handoffs, no gaps between 'how it looks' and 'how it works.' Our fullstack engineers handle the entire stack — database, backend logic, and the interface your users touch — so everything fits together the way it should.",
         whatYouGet: ["Custom software builds", "API development & integration", "Product engineering", "Full-cycle app development"],
         howWeWork: ["Discover", "Architect", "Develop", "Launch", "Scale"],
-        image: "image/fullstack_illust_1785940042188.jpg"
+        image: "./image/fullstack_illust_1785940042188.jpg"
     },
     software: {
         title: "03 — Software",
@@ -684,7 +684,7 @@ const serviceData = {
         desc: "We engineer reliable, secure systems that can grow with your business — whether that's a fresh MVP or a platform serving thousands of users. We also stick around after launch to keep things running smoothly.",
         whatYouGet: ["Enterprise applications", "Software modernization", "Quality testing", "Long-term maintenance & support"],
         howWeWork: ["Understand", "Engineer", "Validate", "Evolve"],
-        image: "image/software_illust_1785940058004.jpg"
+        image: "./image/software_illust_1785940058004.jpg"
     },
     applications: {
         title: "04 — Applications",
@@ -692,7 +692,7 @@ const serviceData = {
         desc: "From customer-facing mobile apps to internal dashboards, we design and build applications that are intuitive from the first tap. Android, iOS, or web — we meet your users where they are.",
         whatYouGet: ["Mobile apps (Android & iOS)", "Customer portals", "Enterprise dashboards", "E-commerce platforms"],
         howWeWork: ["Discover", "Design", "Develop", "Scale"],
-        image: "image/apps_illust_1785940073307.jpg"
+        image: "./image/apps_illust_1785940073307.jpg"
     },
     iot: {
         title: "05 — IOT Products",
@@ -700,7 +700,7 @@ const serviceData = {
         desc: "We help connect hardware to intelligent software — turning devices into smart, data-driven products. From prototyping to production-ready connected systems, we build the bridge between the physical and digital.",
         whatYouGet: ["Connected device integration", "Real-time data pipelines", "Custom dashboards", "End-to-end IoT product development"],
         howWeWork: ["Imagine", "Prototype", "Validate", "Launch"],
-        image: "image/iot_illust_1785940088279.jpg"
+        image: "./image/iot_illust_1785940088279.jpg"
     },
     cybersecurity: {
         title: "06 — Cybersecurity",
@@ -708,7 +708,7 @@ const serviceData = {
         desc: "Security isn't something you bolt on at the end — it's built in from day one. We help you stay ahead of threats instead of reacting to them, protecting your systems, your data, and your customers' trust.",
         whatYouGet: ["Security assessments", "Vulnerability testing", "Threat monitoring", "Identity & access management", "Cloud security"],
         howWeWork: ["Assess", "Protect", "Monitor", "Strengthen"],
-        image: "image/cyber_illust_1785940104742.jpg"
+        image: "./image/cyber_illust_1785940104742.jpg"
     },
     consulting: {
         title: "07 — Consulting & Training",
@@ -716,7 +716,7 @@ const serviceData = {
         desc: "Whether you need a clear strategy for digital transformation or a team that's genuinely upskilled, we work alongside you — not just to advise, but to build lasting capability inside your organization.",
         whatYouGet: ["IT & digital transformation consulting", "Corporate training", "Workforce planning", "Nexafo Academy programs", "Internship & placement support"],
         howWeWork: ["Listen", "Strategize", "Execute", "Empower"],
-        image: "image/consulting_illust_1785940198973.jpg"
+        image: "./image/consulting_illust_1785940198973.jpg"
     }
 };
 
